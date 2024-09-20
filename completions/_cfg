@@ -1,0 +1,8 @@
+#compdef cfg
+
+local -a dirs
+dirs=(~/.config/*(-/N:t))
+
+_describe -t dirs 'config directories' dirs
+
+return 0

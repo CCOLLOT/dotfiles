@@ -1,0 +1,8 @@
+#compdef code
+
+local -a dirs
+dirs=(~/projects/*(-/N:t))
+
+_describe -t dirs 'project directories' dirs
+
+return 0
